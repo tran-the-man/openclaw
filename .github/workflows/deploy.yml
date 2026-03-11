@@ -17,6 +17,6 @@ jobs:
           username: dev
           key: ${{ secrets.HETZNER_SSH_KEY }}
           script: |
-            cd /openclaw/openclaw
+            cd ~/openclaw/openclaw
             git pull
             docker compose up -d --build
